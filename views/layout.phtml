@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<base href="/localhost" />
+	<meta charset="utf=8" />
+	<title><?= $title ?></title>
+	<meta name="description" content="<?= $description ?>" />
+	<link rel='stylesheet' href='styles.css'>
+	<script src="jslibrary.js"></script>
+</head>
+<body>
+<header>
+<h1>Salefinder.ng</h1>
+</header>
+<nav>
+<ul>
+<li><a href="home">Home</a></li>
+<li><a href="register">Register</a></li>
+<li><a href="login">Login</a></li>
+<li><a href="advertise">Advertise</a></li>
+<li><a href="contact">Contact Us</a></li>
+</ul>
+</nav>
+<br clear="both" />
+<article>
+<?php $this->controller->renderView(); ?>
+</article>
+<footer role='content-info'>
+&copy; <?php echo date('Y')." Salefinder.ng"; ?>
+</footer>
+</body>
+</html>
