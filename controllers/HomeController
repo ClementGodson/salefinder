@@ -1,0 +1,11 @@
+<?php
+class HomeController extends Controller{
+	
+	public function process($params){
+		$this->head['description'] = 'Home of Discounted goods';
+		$this->head['title'] = 'Welcome to Salefinder';
+		$this->view = 'home';
+		}
+}
+
+?>
